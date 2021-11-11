@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Ranking de Livros</title>
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https: //fonts.googleapis.com/css2? family = Comfortaa: wght @ 500 & display = swap "rel =" stylesheet ">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h2>Ranking de Livros!</h2>
+    <div id="divForm">
+     <form id="formCad" action="">
+       <h3>Preencha os dados:</h3>
+       <label for="">Titulo do livro:</label>
+       <input data-js="inputTitle" type="text"> 
+       <label for="">Autor(a):</label>
+       <input data-js="inputAutor" type="text">
+       <label for="">Nota:</label>
+       <input data-js="inputValue" type="number">
+      <button data-js="btnCadastro"type="button">Cadastrar!</button>
+     </form>
+    </div>
+    <div id="tableDiv" >
+    <table >
+      <thead>
+        <th>Titulo</th>
+        <th>Autor</th>
+        <th>Nota</th>
+      </thead>
+      <tbody id="tableList" data-js="tableList"></tbody>
+    </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
