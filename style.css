@@ -7,7 +7,8 @@ h2{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center
+  justify-content: center;
+  border-bottom: 2px solid;
 }
 #divForm{
   display: flex;
@@ -25,6 +26,24 @@ h2{
   border-radius: 10px;
   width: 25rem;
   height: 25rem;
+  font-size: 1.5rem;
+  color: #44444f;
+}
+
+input{
+  border: none;
+  height: 1.5rem;
+  width: 18.5rem;
+}
+
+#cadastrar{
+  color: #f6eeaa;
+  background-color: #7a4156;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 11rem;
+  height: 2rem;
 }
 
 #tableDiv{
@@ -55,9 +74,20 @@ h2{
 #meuId{
   background-color: #ffe7d4;
   border: none;
+  cursor: pointer;
 }
 
 .svgs{
   height: 24px;
   border: none;
+}
+#livros{
+  height: 45px;
+  position: relative;
+  left: -11px;
+  top: -8px;
+}
+
+#prancheta{
+  height: 45px;
 }
