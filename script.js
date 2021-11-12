@@ -47,12 +47,19 @@
     $tr.appendChild($tdValue)
     $tr.appendChild($tdRemove);
 
+    clearInput(); //coloquei um limpa inputs
+
     $tdRemove.addEventListener("click", () => {
       return $tr.parentNode.removeChild($tr);
     });
 
     return $tableList.appendChild($tr);
+  }
 
+  function clearInput(){
+    $inputTitle.value = '';
+    $inputAutor.value = '';
+    $inputValue.value = '';
   }
   
 })(window, document);
