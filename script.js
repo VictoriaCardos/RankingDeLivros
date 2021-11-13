@@ -6,7 +6,6 @@
   var $inputValue = doc.querySelector('[data-js="inputValue"]')
   const $btnCadastro = doc.querySelector('[data-js="btnCadastro"]')
   const $tableList = doc.querySelector('[data-js="tableList"]')
-  
 
   $btnCadastro.addEventListener('click', verifyValue, false);
 
@@ -21,12 +20,18 @@
     if($inputTitle.value == '' || $inputAutor.value == '' || $inputValue.value == ''){
      return alert('Para que o cadastro seja feito você precisa preencher todos os dados ;)');
     }
-    
-    createTable()
-    
+    verifyInput()
+  }
+
+  function verifyInput(){
+    if ($inputValue.value < 1 || $inputValue.value > 5 ){
+      return alert('Insira uma nota entre 1 e 5!')
+    }
+    createTable();
   }
 
   function createTable(){
+    
     var $tr = doc.createElement('tr');
     var $tdTitle = doc.createElement('td');
     var $tdAutor = doc.createElement('td');
